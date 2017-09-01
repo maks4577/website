@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal website</title>
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -54,35 +54,57 @@
     <br>
     <article>
 
-             
+             <h2>Portfolio</h2>
         <section id="portfolio">
-            <h2>Portfolio</h2>
+            
+            <div>
             <p>Web Development In 2017 - A Practical Guide</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/9hDKfBKuXjI" allowfullscreen></iframe>
+            </div>
+            <div>
             <p>Web Development Tutorial for Beginners</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/3JluqTojuME" allowfullscreen></iframe>
+            </div>
         </section>
 
 
 
     </article>
-    <footer>
-        <section id="links">
+    <br>
+   <footer>
+         <section id="links">
             <h2>Links</h2>
             <h3>Here you can find me:</h3>
-            <img src="img/facebook1.png" alt="Facebook" width="50" height="50">
-            <a href="https://www.facebook.com/M.Tsvirinkalo">Facebook</a>
-            <img src="img/instagram.png" alt="Instagram" width="50" height="50">
-            <a href="https://www.instagram.com/maks__ts/">Instagram</a>
+            
+            <a href="https://www.facebook.com/M.Tsvirinkalo"><img src="img/facebook1.png" alt="Facebook" width="50" height="50"></a>
+            
+            <a href="https://www.instagram.com/maks__ts/"><img src="img/instagram.png" alt="Instagram" width="50" height="50"></a>
         </section>
-        <section id="contact">
-            <h3>Contact me</h3>
-            <form method="POST" action="https://formspree.io/makstsvirinkalo@gmail.com">
 
-                <input type="text" placeholder="Enter your name"><br>
-                <input type="email" placeholder="Enter your E-mail"><br>
-                <textarea placeholder="Message"></textarea><br>
-                <input type="submit" value="Send">
+        <section id="contact">
+
+            <form class="contact_form" action="#" method="post" name="contact_form">
+
+                <h2>Contact Me</h2>
+                <br>
+
+                <label>Name:</label>
+                <input type="text" placeholder="John Doe" required />
+
+                <br>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="john_doe@example.com" required />
+
+                    <br>
+
+                    <label>Message:</label>
+                    <textarea name="message" cols="40" rows="6" required></textarea>
+                </div>
+                <br>
+
+                <button class="submit" type="submit">Send</button>
+
 
             </form>
         </section>
