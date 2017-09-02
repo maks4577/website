@@ -73,6 +73,7 @@ article section {
 article div{
     width:45%;
     max-width:720px;
+    padding: 8px 8px;
 }
 article iframe{
     width:100%;
@@ -98,6 +99,7 @@ aside img {
 
 main {
     display: flex;
+    padding: 0 10px;
 }
 
 main aside {
@@ -145,7 +147,7 @@ footer {
 
 .contact_form textarea {
     padding: 8px;
-    width: 300px;
+    width: 220px;
 }
 
 .contact_form button {
@@ -290,7 +292,7 @@ button.submit:active {
         flex-wrap: wrap;
     }
     aside div {
-        flex-basis: 50%;
+        flex-basis: 100%;
     }
 
     main {
@@ -304,10 +306,22 @@ button.submit:active {
         order: 2;
     }
     article {
-        order: 3;
+        display: flex;
+        flex-wrap: wrap;
     }
+    
+    article div{
+        flex-basis: 100%;
+    }
+    
+    article h2{
+        padding: 0 8px;
+    }
+    
     footer {
-        order: 4;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
     }
 
 }
